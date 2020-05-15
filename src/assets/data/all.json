@@ -4,5 +4,11 @@
      "price":"360",
      "year":"2019",
      "path":"assets/images/items/nike/item1.jpg"
+  },
+  {
+    "model":"",
+    "price":"",
+    "year":"",
+    "path":""
   }
 ]
