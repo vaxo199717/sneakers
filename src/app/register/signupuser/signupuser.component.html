@@ -1,0 +1,74 @@
+<form action="" [formGroup]="forms">
+  <div class="form-row mt-5">
+      <div class="form-group col-md-6">
+        <label for="inputEmail4" class="labelclass">სახელი:</label>
+        <input type="text" class="form-control" id="inputEmail4" formControlName="firstName"
+        [ngClass]="{'is-invalid': forms.get('firstName').touched && forms.get('firstName').invalid}">
+      </div>
+      <div class="form-group col-md-6">
+        <label for="inputPassword4" class="labelclass">გვარი:</label>
+        <input type="text" class="form-control" id="inputPassword4" formControlName="lastName"
+        [ngClass]="{'is-invalid': forms.get('lastName').touched && forms.get('lastName').invalid}">
+      </div>
+    </div>
+    <div class="form-row mt-3">
+    <div class="form-group col-md-6">
+      <label for="inputPassword4" class="labelclass">მობილურის ნომერი ან ელ-ფოსტა:</label>
+      <input type="text" class="form-control" id="inputPassword4" formControlName="numOrEmail"
+      [ngClass]="{'is-invalid': forms.get('numOrEmail').touched && forms.get('numOrEmail').invalid}">
+    </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4" class="labelclass">პაროლი:</label>
+      <input type="password" class="form-control" id="inputPassword4" formControlName="password"
+      [ngClass]="{'is-invalid': forms.get('password').touched && forms.get('password').invalid}">
+    </div>
+  </div>
+    <div class="form-group col-md-6">
+      <label for="inputPassword4" class="labelclass">დაბადების თარიღი:</label>
+  </div>
+  <div class="form-group col-md-8 d-flex">
+      <select class="custom-select mr-sm-1" id="inlineFormCustomSelect" formControlName="birthday"
+      [ngClass]="{'is-invalid': forms.get('birthday').touched && forms.get('birthday').invalid}">
+        <option selected value="">დღე</option>
+          <option *ngFor="let birthday of bday" [value]="birthday">{{birthday}}</option>
+        </select>
+        <select class="custom-select mr-sm-1" id="inlineFormCustomSelect" formControlName="birthmonth"
+        [ngClass]="{'is-invalid': forms.get('birthmonth').touched && forms.get('birthmonth').invalid}">
+          <option selected value="">თვე</option>
+          <option selected *ngFor="let birthmonth of bmonth" [value]="birthmonth">{{birthmonth}}</option>
+        </select>
+        <select class="custom-select mr-sm-1" id="inlineFormCustomSelect" formControlName="birthyear"
+        [ngClass]="{'is-invalid': forms.get('birthyear').touched && forms.get('birthyear').invalid}">
+          <option selected value="">წელი</option>
+          <option selected *ngFor="let birthyear of byear" [value]='birthyear'>{{birthyear}}</option>
+        </select>
+      </div>
+      <div class="form-group col-md-6">
+          <label for="inputPassword4" class="labelclass">სქესი:</label>
+      </div>
+      <div class="form-row align-items-center mb-4">
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline1" name="gender" class="custom-control-input" formControlName="gender" value="ქალი">
+          <label class="custom-control-label" for="customRadioInline1">ქალი</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline2" name="gender" class="custom-control-input" formControlName="gender" value="კაცი">
+          <label class="custom-control-label" for="customRadioInline2">კაცი</label>
+        </div>
+        <div class="custom-control custom-radio custom-control-inline">
+          <input type="radio" id="customRadioInline3" name="gender" class="custom-control-input" formControlName="gender" value="მორგებული">
+          <label class="custom-control-label" for="customRadioInline3">მორგებული</label>
+        </div>
+      </div>
+      <div class="progress mb-4">
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('firstName').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('lastName').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('numOrEmail').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('password').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('birthday').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('birthmonth').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('birthyear').valid"></div>
+        <div class="progress-bar bg-success" role="progressbar" style="width: 12.5%;" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100" *ngIf="forms.get('gender').valid"></div>
+      </div>
+          <button type="button" class="btn-lg btn-success" (click)="add()">რეგისტრაცია</button>
+        </form>

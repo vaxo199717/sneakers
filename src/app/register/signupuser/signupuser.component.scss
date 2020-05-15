@@ -1,0 +1,19 @@
+$geofont: "MG Glaho Drunk", sans-serif;
+
+    .labelclass{
+    font-family: $geofont;
+    color: white;
+    font-size: 18px;
+}
+.custom-control-label{
+    font-size: 20px;
+    color: white;
+}
+    .title{
+    font-size: 27px;
+    color: rgb(0, 0, 0);
+    font-family: $geofont;
+    background: rgba(255, 255, 255, 0.589);
+    padding: 10px;
+    border-radius: 10px;
+}

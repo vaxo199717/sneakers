@@ -1,0 +1,14 @@
+$geofont: "MG Glaho Drunk", sans-serif;
+
+.labelclass{
+    font-family: $geofont;
+    color: white;
+    font-size: 18px;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 35px;
+}
