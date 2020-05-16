@@ -10,7 +10,6 @@ import { GirlComponent } from './menu/girl/girl.component';
 import { BoyComponent } from './menu/boy/boy.component';
 import { ChildComponent } from './menu/child/child.component';
 import { AboutComponent } from './menu/about/about.component';
-import { ContactComponent } from './menu/contact/contact.component';
 import { SigninComponent } from './menu/signin/signin.component';
 import { CartComponent } from './menu/cart/cart.component';
 import { AllComponent } from './shoes/all/all.component';
@@ -36,7 +35,6 @@ import { HttpClientModule } from '@angular/common/http';
     BoyComponent,
     ChildComponent,
     AboutComponent,
-    ContactComponent,
     SigninComponent,
     CartComponent,
     AllComponent,

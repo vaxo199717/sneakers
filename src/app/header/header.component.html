@@ -1,28 +1,40 @@
 <nav class="navbar">
   <div class="menu-content">
     <div class="logo">
-      <a class="sneakers" [routerLink]="['/home']" routerLinkActive="router-link-active" >sneakers.ge</a>
+      <a class="sneakers" [routerLink]="['/home']" routerLinkActive="router-link-active">sneakers.ge</a>
     </div>
     <div class="menu">
       <ul>
-        <li><a class="menuicon" [routerLink]="['/home']" routerLinkActive="router-link-active" >მთავარი &nbsp; <i class="home icon large"></i></a></li>
+        <li><a class="menuicon" [routerLink]="['/home']" routerLinkActive="router-link-active">მთავარი &nbsp; <i
+              class="home icon large"></i></a></li>
         <li><a class="menuicon">პროდუქტი &nbsp;<i class="arrow down icon large"></i></a>
           <ul class="dropdown">
             <li>
-              <a [routerLink]="['/girl']" routerLinkActive="router-link-active" ><i class="female icon large"></i> გოგოს ფეხსაცმელი</a>
-              <a [routerLink]="['/boy']" routerLinkActive="router-link-active" ><i class="male icon large"></i> ბიჭის ფეხსაცმელი</a>
-              <a [routerLink]="['/child']" routerLinkActive="router-link-active" ><i class="child icon large"></i>ბავშვის ფეხსაცმელი</a>
+              <a [routerLink]="['/girl']" routerLinkActive="router-link-active"><i class="female icon large"></i> გოგოს
+                ფეხსაცმელი</a>
+              <a [routerLink]="['/boy']" routerLinkActive="router-link-active"><i class="male icon large"></i> ბიჭის
+                ფეხსაცმელი</a>
+              <a [routerLink]="['/child']" routerLinkActive="router-link-active"><i class="child icon large"></i>ბავშვის
+                ფეხსაცმელი</a>
             </li>
           </ul>
         </li>
-        <li><a class="menuicon" [routerLink]="['/about']" routerLinkActive="router-link-active" >ჩვენს შესახებ &nbsp;<i class="info circle icon large"></i></a></li>
-        <li><a class="menuicon" [routerLink]="['/contact']" routerLinkActive="router-link-active" >კონტაქტი &nbsp; <i class="facebook messenger icon large"></i></a></li>
+        <li><a class="menuicon" [routerLink]="['/about']" routerLinkActive="router-link-active">ჩვენს შესახებ &nbsp;<i
+              class="info circle icon large"></i></a></li>
       </ul>
     </div>
+    <div class="wrap">
+      <div class="search">
+         <input type="text" class="searchTerm" placeholder="What are you looking for?">
+         <input type="submit" class="searchButton">
+      </div>
+   </div>
     <div class="signin">
       <ul>
-        <li><a class="user" [routerLink]="['/signin']" routerLinkActive="router-link-active" ><i class="user circle icon big"></i></a></li>
-        <li><a class="cart" [routerLink]="['/cart']" routerLinkActive="router-link-active" ><i class="cart arrow down icon big"></i></a></li>
+        <li><a class="user" [routerLink]="['/signin']" routerLinkActive="router-link-active"><i
+              class="user circle icon big"></i></a></li>
+        <li><a class="cart" [routerLink]="['/cart']" routerLinkActive="router-link-active"><i
+              class="cart arrow down icon big"></i></a></li>
       </ul>
     </div>
   </div>
