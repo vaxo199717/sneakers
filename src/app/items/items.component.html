@@ -1,26 +1,31 @@
 <div class="content">
     <div class="menu-container">
         <div class="menu2">
-            <a class="all" [routerLink]="['/home/all']" routerLinkActive="router-link-active" >ყველა
+            <a class="all" [routerLink]="['/home/all']" routerLinkActive="router-link-active">ყველა
                 <img width="32px" src="assets/images/all.png" alt="">
             </a>
-            <a [routerLink]="['/home/nike']" routerLinkActive="router-link-active" >NIKE
+            <a [routerLink]="['/home/nike']" routerLinkActive="router-link-active">NIKE
                 <img width="32px" src="assets/images/nike.png" alt="">
             </a>
-            <a [routerLink]="['/home/adidas']" routerLinkActive="router-link-active" >ADIDAS
+            <a [routerLink]="['/home/adidas']" routerLinkActive="router-link-active">ADIDAS
                 <img width="32px" src="assets/images/adidas.png" alt="">
             </a>
-            <a [routerLink]="['/home/rebook']" routerLinkActive="router-link-active" >REEBOK
+            <a [routerLink]="['/home/rebook']" routerLinkActive="router-link-active">REEBOK
                 <img width="32px" src="assets/images/reebok.png" alt="">
             </a>
-            <a [routerLink]="['/home/puma']" routerLinkActive="router-link-active" >PUMA
+            <a [routerLink]="['/home/puma']" routerLinkActive="router-link-active">PUMA
                 <img width="32px" src="assets/images/puma.png" alt="">
             </a>
-            <a [routerLink]="['/home/newbalance']" routerLinkActive="router-link-active" >NEW BALANCE
+            <a [routerLink]="['/home/newbalance']" routerLinkActive="router-link-active">NEW BALANCE
                 <img width="32px" src="assets/images/newbalance.png" alt="">
             </a>
+
+            <div class="ui icon input">
+                <input type="text" placeholder="ძებნა..." [formControl]='queryCtrnl'>
+                <i class="inverted circular search link icon"></i>
+            </div>
         </div>
-        <div class=""></div>
+
     </div>
     <div>
-<router-outlet></router-outlet>
+        <router-outlet></router-outlet>
