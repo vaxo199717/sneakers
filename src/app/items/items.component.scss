@@ -1,42 +1,29 @@
-.content{
-    position: sticky;
-    padding-top: 50px;
-    width: 1350px;
+.menu-container{
+    background-color: white;
+    margin-top: 50px;
+    width: 100%;
     margin-left: auto;
     margin-right: auto;
-    
-
-    .menu-container{
+    display:flex;
+    justify-content: space-between;
+    .menu2{        
+        margin: 0 auto;
         display:flex;
-        justify-content: space-around;
-        background-color: white;
-        .menu2{
-            display:flex;
-            align-items: center;
-            height: 60px;
-            .all{
-                font-weight: bolder;
-                font-family: "BPG ExtraSquare Mtavruli", sans-serif;
-            }
-            a{
-                color: black;
-                font-size: 20px;
-                font-family: 'Righteous', cursive;
-                padding-left: 40px;
-                &:hover img{
-                    transform: rotate(360deg);
-                    transition: 1s;
-                }
-            }
+        align-items: center;
+        height: 60px;
+        .all{
+            font-weight: bolder;
+            font-family: "BPG ExtraSquare Mtavruli", sans-serif;
         }
-        .input{
-            display: flex;
-            align-items: center;
-            .icon{
-                display: flex;
-                align-self: center;
+        a{
+            color: black;
+            font-size: 20px;
+            font-family: 'Righteous', cursive;
+            padding-left: 40px;
+            &:hover img{
+                transform: rotate(360deg);
+                transition: 1s;
             }
         }
     }
-
 }

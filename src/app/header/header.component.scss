@@ -3,57 +3,6 @@
 body{
   background: #f2f2f2;
 }
-
-.search {
-  width: 100%;
-  position: relative
-}
-
-.searchTerm {
-  float: left;
-  width: 100%;
-  border: 3px solid #00B4CC;
-  padding: 5px;
-  height: 20px;
-  border-radius: 5px;
-  outline: none;
-  color: #9DBFAF;
-}
-
-.searchTerm:focus{
-  color: #00B4CC;
-}
-
-.searchButton {
-  position: absolute;
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  opacity: 0;
-  cursor: pointer;
-}
-
-.search:before {
-  position: absolute;
-  right: -50px;
-  width: 40px;
-  height: 36px;
-  line-height: 36px;
-  background: #00B4CC;
-  text-align: center;
-  color: #fff;
-  border-radius: 5px;
-  font-family: 'FontAwesome';
-  content: '\f002';
-}
-
-/*Resize the wrap to see the search bar change!*/
-.wrap{
-  width: 60%;
-  margin: 10% auto;
-}
-
-
 .navbar{
 	width: 100%;
 	background: #000000;
@@ -64,7 +13,7 @@ body{
 	.menu-content {
 		display:flex;
 		height: 52px;
-		width: 1200px;
+		max-width: 1200px;
 		margin-left: auto;
 		margin-right:auto;
 		background: #000000;
@@ -85,7 +34,7 @@ body{
 		}
 		.menu{
 			height: 52px;
-			width: 1100px;
+			max-width: 1100px;
 			margin-left: auto;
 			margin-right: auto;
 				ul{
